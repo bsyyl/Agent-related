@@ -1,0 +1,18 @@
+[search]
+topN = 5
+
+[local_kb]
+# Prefer local knowledge base results before web search.
+enabled = true
+# Directory containing local knowledge files (.md/.txt/.json/.pdf.txt etc.)
+path = "./local_kb"
+# How many local results to return per query (before merging with web results).
+topN = 8
+# File patterns to include in indexing/search.
+include_globs = ["**/*.md", "**/*.txt", "**/*.json"]
+# Max characters to read per file to avoid huge memory usage.
+max_chars_per_file = 200000
+
+[port_info]
+# Optional local port dataset (JSON). If missing, port tool will fallback to local_kb/web.
+local_dataset = "./local_kb/ports.json"
