@@ -1,0 +1,29 @@
+[basic]
+api_base = "http://10.126.126.209:8000/v1"
+model = "llm"
+api_key = "not-needed"
+
+[clarify]
+api_base = "http://10.126.126.209:8000/v1"
+model = "llm"
+api_key = "not-needed"
+
+[planner]
+api_base = "http://10.126.126.209:8000/v1"
+model = "llm"
+api_key = "not-needed"
+
+[query_generation]
+api_base = "http://10.126.126.209:8000/v1"
+model = "llm"
+api_key = "not-needed"
+
+[evaluate]
+api_base = "http://10.126.126.209:8000/v1"
+model = "llm"
+api_key = "not-needed"
+
+[report]
+api_base = "http://10.126.126.209:8000/v1"
+model = "llm"
+api_key = "not-needed"

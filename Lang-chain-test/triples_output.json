@@ -1,0 +1,192 @@
+[
+    {
+        "head": "国际海事组织",
+        "relation": "Established",
+        "tail": "港口国监督检查"
+    },
+    {
+        "head": "港口国监督检查",
+        "relation": "Based on",
+        "tail": "《国际海事组织文书实施规则》"
+    },
+    {
+        "head": "港口国监督检查",
+        "relation": "Based on",
+        "tail": "第 A.1070(28) 号决议"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《1974 年安全公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《防污公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《1978 年培训公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《1969 年吨位公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《2001 年防污底公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《2004 年压载水管理公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《2007 年内罗毕残骸清除公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《1972 年避碰公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《1969 年民事责任公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《2001 年燃油公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《1966 年载重线公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《2006 年海事劳工公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "《1976 年商船 (最低标准) 公约》"
+    },
+    {
+        "head": "船舶",
+        "relation": "Exist",
+        "tail": "不足"
+    },
+    {
+        "head": "船舶",
+        "relation": "Exist",
+        "tail": "严重缺陷"
+    },
+    {
+        "head": "主管机关",
+        "relation": "Manage",
+        "tail": "船舶"
+    },
+    {
+        "head": "港口国主管当局",
+        "relation": "Manage",
+        "tail": "船舶"
+    },
+    {
+        "head": "缔约国",
+        "relation": "Apply",
+        "tail": "公约规定"
+    },
+    {
+        "head": "缔约国",
+        "relation": "Apply",
+        "tail": "程序"
+    },
+    {
+        "head": "港口国主管机关",
+        "relation": "Carry out",
+        "tail": "采取控制措施"
+    },
+    {
+        "head": "港口国主管机关",
+        "relation": "Carry out",
+        "tail": "采取补救措施"
+    },
+    {
+        "head": "缔约国",
+        "relation": "Carry out",
+        "tail": "检验和检查"
+    },
+    {
+        "head": "船舶",
+        "relation": "Engaged in",
+        "tail": "停靠港口"
+    },
+    {
+        "head": "船舶",
+        "relation": "Equipped with",
+        "tail": "设备"
+    },
+    {
+        "head": "船舶",
+        "relation": "Equipped with",
+        "tail": "船员发证"
+    },
+    {
+        "head": "船舶",
+        "relation": "Equipped with",
+        "tail": "最低配员标准"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "安全水平"
+    },
+    {
+        "head": "船舶",
+        "relation": "Comply",
+        "tail": "环保水平"
+    },
+    {
+        "head": "船舶",
+        "relation": "Belongs to",
+        "tail": "限制"
+    },
+    {
+        "head": "缔约国",
+        "relation": "Prohibit",
+        "tail": "给予更优惠待遇"
+    },
+    {
+        "head": "港口国监督官员",
+        "relation": "Engaged in",
+        "tail": "开展港口国监督检查"
+    },
+    {
+        "head": "非缔约国船舶",
+        "relation": "Comply",
+        "tail": "公约规定"
+    },
+    {
+        "head": "非缔约国船舶",
+        "relation": "Exist",
+        "tail": "没有证书"
+    },
+    {
+        "head": "国际劳工组织",
+        "relation": "Established",
+        "tail": "港口国监督检查"
+    },
+    {
+        "head": "国际劳工组织",
+        "relation": "Established",
+        "tail": "《2006 年海事劳工公约》"
+    }
+]

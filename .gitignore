@@ -1,0 +1,14 @@
+LLM-KG/processed_chunk/
+LLM-KG/processed_kg/
+
+**/datas/*
+# 但是不要忽略 data 文件夹下的 .keep 文件
+!**/datas/.keep
+
+**/models/*
+# 排除 .keep 文件，使其不被忽略
+!**/models/.keep
+
+**/.temp/*
+
+**/__pycache__/*

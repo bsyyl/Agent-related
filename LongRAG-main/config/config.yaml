@@ -1,0 +1,7 @@
+api:
+  deepseek_url: ""
+
+
+model_path:
+  emb_model: "/home/jsj201-2/mount1/ZhuZiXuan/LongRAG-main/models/multilingual-e5-large"
+  rerank_model: "/home/jsj201-2/mount1/ZhuZiXuan/LongRAG-main/models/ms-marco-MiniLM-L-12-v2"

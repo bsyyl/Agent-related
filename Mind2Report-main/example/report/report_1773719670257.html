@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球电动车电池行业深度研究报告 (2026)</title>
+    <script src="https://gcore.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://gcore.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    
+    <style>
+		:root {
+		  --lavender: #A1A9FE;
+		  --peach: #F9D7A0;
+		  --ink: #161616;
+		  --text-primary: #3f3f46;
+		  --text-muted: #6b7280;
+		  --line-divider: rgba(22, 22, 22, 0.10);
+		  --heading-color: #1f2328;
+		  --h2-color: #5f5aa5;
+		  --highlight: #6b5acc;
+		  --page-bg: #ffffff;
+		  --glass-bg: rgba(255, 255, 255, 0.8);
+		  --glass-border: rgba(255, 255, 255, 0.78);
+		  --chip-bg: rgba(255, 255, 255, 0.65);
+		  --s1: 6px; --s2: 10px; --s3: 14px; --s4: 18px;
+		  --s5: 24px; --s6: 32px; --s7: 48px;
+		  --measure: 97ch;
+		
+		  --lh-solid: 1.1;
+		  --lh-tight: 1.35;
+		  --lh-snug:  1.5;
+		  --lh-normal: 1.7;
+		  --lh-relaxed: 1.85;
+		}
+		
+		.brutalist-theme {
+		  --black: #111111;
+		  --white: #ffffff;
+		  --off-white: #f5f5f5;
+		  --accent: #cafa69;
+		  --number: #fdccff;
+		  --background:#1f1f1f;
+		  --highlight:#fffeec;
+		  --bold: #7c6ef5;
+		}
+		
+		* { box-sizing: border-box; }
+		html { font-size: 16px; }
+		
+		body {
+		  margin: 0;
+		  color: var(--text-primary);
+		  font-family: "Source Han Sans SC", "Noto Sans SC", "Noto Sans CJK SC", "PingFang SC", "Morise UD Sans", "Montserrat", sans-serif, "Hiragono Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+		  -webkit-font-smoothing: antialiased;
+		  text-rendering: optimizeLegibility;
+		  background-attachment: fixed;
+		  background:
+			radial-gradient(1500px 880px at 50% 50%, rgba(106, 90, 205, 0.14), transparent 62%),
+			radial-gradient(1800px 900px at 12% 8%, rgba(161, 169, 254, 0.22), transparent 60%),
+			radial-gradient(1600px 820px at 85% 20%, rgba(249, 215, 160, 0.22), transparent 60%),
+			radial-gradient(1450px 800px at 40% 95%, rgba(173, 143, 255, 0.12), transparent 60%),
+			linear-gradient(180deg, #fafafe 0%, #ffffff 85%, #ffffff 100%);
+		  transition: background 0.2s ease;
+		  position: relative; 
+		  z-index: 1;
+		  line-break: loose;                
+		  font-kerning: normal;
+		  font-feature-settings: "palt" 1; 
+		}
+		
+		body::before {
+		  content: "";
+		  position: fixed;
+		  top: 0; left: 0; right: 0; bottom: 0;
+		  box-shadow: inset 0 0 15vw 10vw rgba(161, 169, 254, 0.08);
+		  pointer-events: none; 
+		  z-index: -1;
+		}
+
+		.brutalist-theme {
+		  background: var(--background);
+		  background-attachment: scroll;
+		  color: var(--off-white);
+		}
+		body.brutalist-theme::before {
+			display: none;
+		}
+		
+		.container {
+		  max-width: var(--measure);
+		  margin: 0 auto;
+		  padding: var(--s7) var(--s6);
+		  position: relative;
+		  isolation: isolate; 
+		}
+		
+		.container::before {
+		  content: "";
+		  position: absolute;
+		  inset: clamp(20px, 3vw, 40px);
+		  z-index: 0;               
+		  border-radius: 28px;
+		  pointer-events: none;
+		  background:
+			radial-gradient(1200px 700px at 20% 10%, rgba(255,255,255,.22), transparent 60%),
+			radial-gradient(1000px 600px at 85% 20%, rgba(255,255,255,.18), transparent 60%),
+			linear-gradient(180deg, rgba(255,255,255,.38), rgba(255,255,255,.18));
+		  backdrop-filter: blur(18px) saturate(150%);
+		  -webkit-backdrop-filter: blur(18px) saturate(150%);
+		  box-shadow:
+			0 30px 80px -40px rgba(61,70,125,.22),
+			inset 0 1px 1.2px rgba(255,255,255,.65);
+		}
+		
+		.brutalist-theme .container::before {
+		  content: none;
+		}
+		
+		.content-card {
+		  position: relative;
+		  z-index: 1;
+		  background: rgba(255, 255, 255, 0.92);
+		  border: 1px solid rgba(255,255,255,0.55);
+		  border-radius: 18px;
+		  padding: 3rem 4rem;
+		  backdrop-filter: blur(6px) saturate(130%); 
+		  -webkit-backdrop-filter: blur(6px) saturate(130%);
+		  box-shadow:
+			0 16px 40px -12px rgba(120,120,160,.20),
+			inset 0 0 0 0.8px rgba(255,255,255,.85);
+		  line-height: var(--lh-relaxed); 
+		  counter-reset: sec;
+		}
+		.content-card::before {
+		  display: none;
+		}
+		.brutalist-theme .content-card {
+		  background: var(--background); 
+		  border: none;
+		  border-radius: 0;
+		  box-shadow: none;
+		  backdrop-filter: none;
+		}
+		.brutalist-theme .content-card::before {
+		  display: none;
+		}
+		.company-logo {
+		  display: flex; align-items: center; gap: 10px;
+		  font-weight: 800; font-size: 18px; letter-spacing: -0.01em;
+		  color: var(--ink);
+		  margin-bottom: var(--s5);
+		}
+		.company-logo::before {
+		  content: "";
+		  width: 22px; height: 22px; border-radius: 8px;
+		  background: linear-gradient(135deg, var(--lavender), var(--peach));
+		  box-shadow: 0 6px 12px rgba(161, 169, 254, 0.30);
+		}
+		.brutalist-theme .company-logo {
+		  color: var(--white);
+		}
+		.brutalist-theme .company-logo::before {
+		  border-radius: 0;
+		  background: var(--white);
+		  box-shadow: none;
+		}
+		
+		h1, .report-title, h2, h3 {
+		  color: var(--heading-color);
+		  position: relative;
+		  z-index: 1;
+		}
+		.brutalist-theme h1, .brutalist-theme h2, .brutalist-theme h3 {
+			color: var(--white);
+		}
+		h1, .report-title {
+		  font-size: 2.2rem;
+		  line-height: var(--lh-tight);
+		  font-weight: 800; letter-spacing: -0.02em;
+		  margin: 1rem 0 2rem;
+		}
+		h2 {
+		  counter-increment: sec;
+		  font-size: 1.6rem;
+		  line-height: var(--lh-tight); 
+		  font-weight: 750; letter-spacing: -0.015em;
+		  margin: 3.5rem 0 1.8rem;
+		  padding-bottom: .2rem;
+		  color: var(--h2-color);
+		  text-wrap: balance; 
+		}
+		h2::before {
+		  content: counter(sec, decimal-leading-zero);
+		  position: absolute; left: -6px; top: 50%;
+		  transform: translateY(-55%);
+		  font-size: clamp(48px, 7vw, 84px);
+		  font-weight: 900; letter-spacing: -0.02em; line-height: 0.9;
+		  color: rgba(0, 0, 0, 0.045);
+		  pointer-events: none; z-index: 0;
+		}
+		.brutalist-theme h2 {
+		  color: var(--number);
+		  font-weight: 500;
+		  padding-left: 40px;
+		  counter-increment: none;
+		}
+		.brutalist-theme h2::before {
+		  content: "“";
+		  font-family: 'Georgia', Times, serif;
+		  color: var(--number);
+		  font-size: clamp(65px, 9vw, 85px);
+		  font-weight: 400;
+		  left: -10px; top: -18px;
+		  line-height: 1;
+		  transform: none;
+		}
+		h3 {
+		  font-size: 1.25rem;
+		  font-weight: 700; letter-spacing: -0.01em;
+		  line-height: var(--lh-snug);
+		  margin: 2.5rem 0 1.2rem;
+		  padding-bottom: .3rem;
+		}
+		.report-meta {
+		  display: flex; flex-wrap: wrap; gap: 10px 16px;
+		  color: var(--text-muted); font-size: 13px;
+		  margin-bottom: var(--s3);
+		}
+		.report-meta div { display: inline-flex; align-items: center; gap: 6px; }
+		.report-meta div::before { content: "•"; color: #bdbdbd; }
+		.brutalist-theme .report-meta { color: var(--off-white); }
+		p {
+		  font-size: 16px;
+		  text-align: left;
+		  margin: 0 0 1.5rem;
+		  text-wrap: pretty;
+		}
+		strong { 
+			color: var(--heading-color); 
+			margin: 0 0.13em;
+			font-weight: 600;
+		}
+		.brutalist-theme strong { color: var(--accent);}
+		a {
+		  color: inherit; text-decoration: none;
+		  background-image: linear-gradient(120deg, var(--lavender), var(--peach));
+		  background-size: 0 2px; background-position: 0 100%;
+		  background-repeat: no-repeat;
+		  transition: background-size 0.2s ease;
+		}
+		a:hover { background-size: 100% 2px; }
+		.brutalist-theme a {
+		  background-image: none;
+		  transition: background-color 0.2s ease, color 0.2s ease;
+		}
+		.brutalist-theme a:hover {
+		  background-color: var(--accent);
+		  color: var(--black);
+		}
+
+		img {
+		  display: block; margin: 1.6rem auto 1.8rem;
+		  max-width: 100%; height: auto;
+		  border-radius: 14px;
+		  border: 1px solid rgba(255, 255, 255, 0.7);
+		  background: rgba(255, 255, 255, 0.6);
+		  box-shadow: 0 20px 40px rgba(61, 70, 125, 0.12), 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+		}
+		.brutalist-theme img {
+		  border-radius: 0;
+		  border: 2px solid var(--white);
+		  background: var(--white);
+		  box-shadow: none;
+		}
+		blockquote {
+		  margin: 2.5rem 0; 
+		  padding: var(--s4) var(--s5);
+		  background: rgba(255, 255, 255, 0.65);
+		  border: 1px solid var(--glass-border);
+		  border-radius: 12px;
+		  backdrop-filter: blur(6px);
+		  position: relative;
+		}
+		blockquote::before {
+		  content: "";
+		  position: absolute; left: 0; top: 0; bottom: 0;
+		  width: 3px; border-radius: 12px 0 0 12px;
+		  background: #f48d45;
+		}
+		.brutalist-theme blockquote {
+		  background: var(--black);
+		  border: 2px solid var(--accent);
+		  border-radius: 0;
+		  backdrop-filter: none;
+		}
+		.brutalist-theme blockquote::before {
+		  display: none;
+		}
+		
+		ul {
+		  font-size: 15px;
+		  font-weight: 450;
+		  line-height: 1.9;
+		  font-family: "Morise UD Sans", "Montserrat", sans-serif;
+		  margin: 2.2rem 0;
+		  list-style-type: none;
+		  padding: 1.2rem;
+		  background-color: rgba(238, 240, 251, 0.682);
+		  border-radius: 12px;
+		}
+		ol {
+		  margin: 1rem 0; 
+		  padding-left: 1.5rem;
+		  list-style-position: outside;
+		}
+		ul li {
+		  position: relative;
+		  padding-left: 1.5em;
+		}
+		ol li {
+		  padding-left: 0.5em;
+		  text-indent: 0;
+		}
+		li:not(:last-child) {
+		  margin-bottom: 0.8rem; 
+		}
+		ol li:not(:last-child) {
+		  margin-bottom: 0.4rem;
+		}
+		ul li::before {
+		  content: '✦';
+		  position: absolute;
+		  left: 0; 
+		  color: var(--h2-color);
+		}
+		.brutalist-theme ul {
+			background: #3a3a3a;
+			border: none;
+			border-radius: 12px;
+		}
+		.brutalist-theme ul li::before {
+			content: '❋';
+			color: var(--number);
+			margin-right: 0.5em;
+		}
+		
+		table {
+		  width: 100%;
+		  border-spacing: 0;
+		  margin: 2.2rem 0; 
+		  background: rgba(255, 255, 255, 0.70);
+		  border: none;
+		  border-radius: 14px;
+		  overflow: hidden;
+		  backdrop-filter: blur(6px);
+		  border-collapse: separate;
+		  table-layout: auto;
+		}
+		th, td {
+		  padding: 10px 6px;
+		  border-bottom: 1px solid var(--line-divider);
+		  font-size: 14px;
+		  text-align: center;
+		  overflow-wrap: break-word;
+		}
+		th {
+		  background: var(--highlight); color: #fff;
+		  font-weight: 700;
+		  font-size: 14px;
+		}
+		thead th:first-child { border-top-left-radius: 13px; }
+		thead th:last-child { border-top-right-radius: 13px; }
+		tbody tr:nth-child(even) { background: rgba(255, 255, 255, 0.65); }
+		tbody tr:hover { background: color-mix(in oklab, var(--lavender) 12%, white); }
+		
+		.brutalist-theme table {
+		  border-collapse: collapse;
+		  background: none;
+		  border: 1px solid var(--white);
+		  border-radius: 0;
+		  backdrop-filter: none;
+		  table-layout: auto;
+		}
+		.brutalist-theme th, .brutalist-theme td {
+		  border: 1px solid var(--white);
+		  overflow-wrap: break-word;
+		}
+		.brutalist-theme th {
+		  background: var(--bold);
+		  color: var(--white);
+		}
+		.brutalist-theme thead th:first-child,
+		.brutalist-theme thead th:last-child {
+		  border-radius: 0;
+		}
+		.brutalist-theme tbody tr:nth-child(even) { background: transparent; }
+		.brutalist-theme tbody tr:hover { background: var(--highlight); color: var(--black); }
+		
+		tbody tr:hover .citation-ref a {
+		  background-color: var(--h2-color);
+		  color: white;
+		  box-shadow: none; 
+		}
+		.brutalist-theme tbody tr:hover .citation-ref a {
+		  background-color: var(--accent);
+		  color: var(--black);
+		}
+		.brutalist-theme tbody tr:hover strong {
+		  color: var(--black);
+		}
+		
+		caption {
+		  caption-side: top;
+		  text-align: center;
+		  font-size: 16px;
+		  font-weight: 700;
+		  color: var(--h2-color);
+		  padding-bottom: 1rem;
+		}
+		.brutalist-theme caption {
+		  color: #9b9bff;
+		}
+		
+		.citation-ref {
+		  white-space: nowrap;
+		}
+		.citation-ref::before {
+		  content: ' ';
+		}
+		.citation-ref + .citation-ref::before {
+		  content: '';
+		}
+		.citation-ref a {
+		  display: inline-flex;
+		  justify-content: center;
+		  align-items: center; 
+		  line-height: 1; text-align: center;
+		  width: 1.5em;  height: 1.5em;
+		  padding: 0; border-radius: 50%;
+		  font-variant-numeric: tabular-nums;
+		  font-feature-settings: "palt" 0;
+		  vertical-align: super;
+		  font-size: 0.6em;
+		  font-weight: 500;
+		  color: white; 
+		  margin: 0 1px;
+		  padding: 0px; 
+		  background-color: #b2b3d9; 
+		  transition: all 0.2s ease;
+		}
+		.citation-ref a:hover {
+		  background-color: var(--h2-color);
+		  color: white;
+		  border-color: transparent;
+		}
+		.brutalist-theme .citation-ref a {
+		  color: var(--accent);
+		  background-color: rgba(255, 255, 255, 0.1);
+		  font-weight: 500;
+		  box-shadow: none;
+		  border: none;
+		}
+		.brutalist-theme .citation-ref a:hover {
+		  background-color: var(--accent);
+		  color: var(--black);
+		}
+		
+		hr {
+		  border: none; height: 1px;
+		  background: linear-gradient(90deg, rgba(161, 169, 254, 0.4), rgba(249, 215, 160, 0.4));
+		  margin: var(--s6) 0;
+		}
+		.brutalist-theme hr {
+		  height: 2px;
+		  background: var(--white);
+		}
+		
+		.chart-title {
+		  text-align: center;
+		  font-size: 15px;
+		  font-weight: 700;
+		  color: var(--h2-color);
+		  padding-bottom: 1rem;
+		}
+		.brutalist-theme .chart-title {
+		  color: #9b9bff;
+		}
+		.chart-container {
+		  width: 100%; max-width: 100%;
+		  aspect-ratio: 5 / 3; 
+		  margin: 2rem 0 0.5rem;
+		}
+		.chart-data-source, .table-data-source {
+		  font-size: 13px; color: var(--text-muted);
+		  text-align: left;
+		  margin-top: 0; 
+		  margin-bottom: 2rem;
+		}
+		.brutalist-theme .chart-data-source, .brutalist-theme .table-data-source {
+		  color: var(--off-white);
+		}
+		@media (max-width: 768px) {
+		  html { font-size: 15px; }
+		  .container { padding: var(--s6) var(--s4); }
+		  .content-card { padding: var(--s5) var(--s5); border-radius: 16px; }
+		  h2::before { left: -2px; font-size: 64px; }
+		  .brutalist-theme h2::before { left: -2px; font-size: 64px; }
+		}
+		
+		.style-switcher {
+			position: fixed;
+			top: 15px;
+			right: 20px;
+			z-index: 9999;
+			background: rgba(255, 255, 255, 0.8);
+			backdrop-filter: blur(8px);
+			border-radius: 8px;
+			padding: 6px;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			border: 1px solid rgba(0,0,0,0.05);
+		}
+		.style-switcher span {
+			font-size: 13px;
+			color: #333;
+			margin-left: 4px;
+		}
+		.style-switcher button {
+			border: none;
+			padding: 6px 12px;
+			font-size: 13px;
+			border-radius: 6px;
+			cursor: pointer;
+			background-color: transparent;
+			color: #555;
+			font-weight: 500;
+			transition: all 0.2s ease;
+		}
+		.style-switcher button.active {
+			background-color: var(--highlight);
+			color: white;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+		}
+		.brutalist-theme .style-switcher {
+			background: var(--white);
+			border: 2px solid var(--black);
+			box-shadow: 4px 4px 0 var(--white);
+			backdrop-filter: none;
+		}
+		.brutalist-theme .style-switcher button.active {
+			background-color: var(--black);
+		}
+
+        .citation-popup {
+            position: absolute;
+            background-color: white;
+            border-radius: 8px;
+            width: 340px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 1rem;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(8px);
+            pointer-events: none;
+        }
+
+        .citation-popup.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .citation-popup::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            transform: rotate(45deg);
+            box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.03);
+        }
+
+        .popup-header {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .popup-header svg {
+            width: 1rem;
+            height: 1rem;
+            color: #5F5AA5;
+        }
+
+		.popup-excerpt {
+			font-size: 12px;
+			color: #666;
+			padding: 0.75rem;
+			background-color: #f8fafc;
+			border-radius: 6px;
+			margin-bottom: 0.75rem;
+			line-height: 1.5;
+			border-left: 2px solid #5F5AA5;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 5;
+			-webkit-box-orient: vertical;
+			word-break: break-word;
+			white-space: normal;
+			max-height: calc(1.7em * 5);
+		}
+
+        .popup-actions {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .visit-btn {
+            padding: 0.4rem 0.9rem;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            background-color: #5F5AA5;
+            color: white;
+            font-size: 0.85rem;
+        }
+
+        .visit-btn:hover {
+            background-color: #4a468a;
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 640px) {
+            .citation-popup {
+                width: calc(100vw - 3rem);
+                max-width: 300px;
+            }
+        }
+	</style>
+</head>
+<body>
+<div class="style-switcher">
+	<button id="modern-btn" class="active">Light</button>
+	<button id="brutalist-btn">Dark</button>
+</div>
+<div class="container">
+  <div class="content-card">
+    <h1>全球电动车电池行业深度研究报告 (2026)</h1>
+<h2>行业全景与宏观环境</h2>
+<p>全球电动车电池行业的研究范围界定为用于为电子车辆供电的可充电电池，主要类型包括锂离子电池、铅酸电池、镍氢电池和钠离子电池，同时涵盖动力电池、储能系统及电池回收领域 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/tbrc1921633-electric-vehicle-ev-batteries-global-market-report.html">27</a></span>。2025 年市场规模为 883.6 亿美元，预计 2026 年达 1076.2 亿美元，复合年增长率为 21.8% <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/tbrc1921633-electric-vehicle-ev-batteries-global-market-report.html">27</a></span>。行业生命周期处于快速增长阶段，近年呈指数增长，预计未来几年将继续指数增长至 2030 年 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/tbrc1921633-electric-vehicle-ev-batteries-global-market-report.html">27</a></span>。核心增长驱动力包括乘用车电动车日益普及、锂离子产能提升、成本降低、政府支持性激励措施、全球充电基础设施扩张、超级工厂扩张及电池回收法规 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/tbrc1921633-electric-vehicle-ev-batteries-global-market-report.html">27</a></span>。基于 PEST 框架分析，2021 至 2025 年间行业背景呈现出政策与技术双重驱动的特征，亚太区域占据主导地位，受益于强大的电池制造生态系统和政府激励，中国、日本和韩国引领创新 <span class="citation-ref"><a target="_blank" href="https://www.fortunebusinessinsights.com/zh/ev-solid-state-battery-market-115751">36</a></span>。</p>
+<h3>政策与监管环境演变</h3>
+<p>2021 至 2025 年间，全球主要市场的政策环境经历了从补贴驱动向合规驱动的结构性调整。政策层面受政府激励措施（如联邦税收抵扣）及全球贸易关税影响，经济层面关税增加生产成本并推动本地化生产 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/tbrc1921633-electric-vehicle-ev-batteries-global-market-report.html">27</a></span>。欧盟《电池法案》中关于碳足迹申报的强制性条款于 2025 年 2 月 18 日正式生效，要求所有进入欧盟市场的动力电池声明全生命周期碳排放量 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">30</a></span>。美国《通胀削减法案》通过 FEOC 条款限制受限制国家实体控制的关键矿产获取 7,500 美元税收抵免 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">30</a></span>。中国在购置税减征和以旧换新等政策利好下，推动新能源汽车销量保持高速增长 <span class="citation-ref"><a target="_blank" href="https://www.cpnn.com.cn/news/xny/202601/t20260130_1863889.html">40</a></span>。这些政策变化显著增加了供应链合规成本及准入壁垒，促使主要经济体政府推出激励措施、本地化要求和资金计划支持电池生产 <span class="citation-ref"><a target="_blank" href="https://www.gminsights.com/zh/industry-analysis/electric-vehicle-ev-battery-components-market">38</a></span>。</p>
+<h3>宏观经济与需求驱动</h3>
+<p>宏观经济与需求端在 2021 至 2025 年间表现出强劲的增长逻辑，但同时也面临产能周期的挑战。2025 年新能源汽车销量达 1649 万辆，新车渗透率首次超过 50% <span class="citation-ref"><a target="_blank" href="https://www.cpnn.com.cn/news/xny/202601/t20260130_1863889.html">40</a></span>。社会层面电动车销量显著增长，美国插电式电动汽车市场份额 2022 年 6.8% 增至 2023 年 9.1% <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/tbrc1921633-electric-vehicle-ev-batteries-global-market-report.html">27</a></span>。经济层面，2025 年 1 月至 10 月全球电动汽车电池装机量达到 933.5 GWh，同比增长 35.2% <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">30</a></span>。然而，麦肯锡分析指出已公告的全球电池标称产能到 2026 年将超过 1.2 TWh，面临产能过剩后的行业洗牌 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">30</a></span>。电池包平均价格降至 108 USD/kWh，但原材料价格周期及供应链伦理问题（如刚果金童工问题）推动了无钴电池技术的发展 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">30</a></span>。2026 年 2 月中国动力和储能电池总产量 141.6 GWh，同比增长 41.3%，但动力电池需求同比下降，显示行业正经历结构性调整 <span class="citation-ref"><a target="_blank" href="https://www.eet-china.com/mp/a480251.html">39</a></span>。技术层面，干法电极工艺可减少 15% 至 30% 的制造成本，为成本降低提供了具体路径 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">30</a></span>。</p>
+<h2>市场格局与竞争态势</h2>
+<h3>市场规模与细分赛道表现</h3>
+<p>2021 至 2025 年间，全球电动车电池行业在政策与技术的双重驱动下实现了规模扩张，但增速结构发生显著变化。2025 年全球电动汽车电池组市场规模预计达到 1107.27 亿美元，显示出行业在经历高速成长后的稳健态势 <span class="citation-ref"><a target="_blank" href="https://www.cmes.org/library/recom/b6679d801e684bfd9f154fab40b044d6.html">42</a></span>。从装机量维度看，2025 年 1 月至 10 月全球电动汽车电池装机量达到 933.5 GWh，同比增长 35.2%，表明市场需求在技术迭代与政策壁垒驱动下仍保持强劲扩张惯性 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">51</a></span>。然而，增长动力正从单纯的数量增长向结构性优化转变，2026 年 1 月全球电动汽车电池装车量为 71.9 GWh，同比增长 10.7%，尽管全球 EV 交付量同比下跌 2.1%，电池装机量仍保持增长，反映出单车带电量提升及储能需求的补充作用 <span class="citation-ref"><a target="_blank" href="https://finance.sina.cn/stock/jdts/2026-03-10/detail-inhqneyz6360392.d.html?vt=4">53</a></span>。</p>
+<p>在细分赛道表现上，乘用车与商用车的应用场景呈现差异化增长逻辑，技术路线的迭代进一步重塑了市场格局。乘用车占据汽车电池市场 70.05% 的份额，是行业需求的基本盘，而重型卡车以 18.44% 的复合年增长率实现最快增长，显示出商用车电动化潜力的释放 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/moi1937268-automotive-battery-market-share-analysis-industry.html">49</a></span>。与此同时，固态电池虽处于试点阶段，但预计将以 18.05% 的复合年增长率成为增长最快的细分市场，预示着下一代技术对现有液态锂电体系的潜在替代趋势 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/moi1937268-automotive-battery-market-share-analysis-industry.html">49</a></span>。化学体系方面，磷酸铁锂（LFP）路线的市场份额持续扩大，部分原因在于客户向 LFP 的转型导致韩系厂商份额下滑，这反映了中低镍路线在成本与安全性驱动下的竞争优势 <span class="citation-ref"><a target="_blank" href="https://finance.sina.cn/stock/jdts/2026-03-10/detail-inhqneyz6360392.d.html?vt=4">51</a></span>。</p>
+<p>供应链的地理分布与资源集中度对细分赛道的稳定性构成关键影响，区域市场表现高度依赖于本地化制造能力。中国 2024 年占全球总产能的 76%，且提炼了约 60% 的锂和 80% 的锰，这种高度集中的制造生态赋予了特定区域市场显著的供给优势 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/moi1937268-automotive-battery-market-share-analysis-industry.html">49</a></span>。然而，关键原材料供应集中度高带来了单一来源风险，如刚果（金）钴产量占全球 70% 以上，澳大利亚、智利和中国锂产量占比超 90%，导致主要国家对外依存度大，进而影响不同区域市场的成本结构与供应安全 <span class="citation-ref"><a target="_blank" href="https://iir.sass.org.cn/2024/0422/c444a568669/page.htm">54</a></span>。这种资源约束促使行业在细分赛道上加速向低钴或无钴技术路线演进，以规避地缘政治与价格波动风险。</p>
+<h3>头部企业竞争策略分析</h3>
+<p>全球电池行业的竞争格局在 2021 至 2025 年间经历了从分散到高度集中的演变，头部企业通过产能布局与垂直整合巩固了市场地位。截至 2025 年 10 月，六家主要中国厂商合计占据全球约 68.9% 市场份额，至 2026 年 1 月这一比例进一步提升至 73.3%，显示出中国企业在全球供应链中的主导权持续增强 <span class="citation-ref"><a target="_blank" href="https://finance.sina.cn/stock/jdts/2026-03-10/detail-inhqneyz6360392.d.html?vt=4">51</a></span>。相比之下，韩国三巨头（LG、SK、三星 SDI）全球份额从 2025 年前十个月的 16.0% 降至 2026 年 1 月的 12.0%，呈现集体失速，这主要归因于北美需求放缓及客户转向 LFP 路线 <span class="citation-ref"><a target="_blank" href="https://finance.sina.cn/stock/jdts/2026-03-10/detail-inhqneyz6360392.d.html?vt=4">51</a></span>。行业集中度提升的同时，麦肯锡分析指出到 2026 年全球电池标称产能将超过 1.2 TWh，远超实际需求，中小型企业面临生存挑战，行业集中度将进一步向具备规模效应和研发溢价的巨头聚拢 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">51</a></span>。</p>
+<p>头部企业的竞争策略呈现出技术绑定与差异化定位并行的特征，以应对同质化竞争压力。宁德时代（CATL）通过 LFP 与高镍三元双路径领先，2025 年 1-10 月市场占有率从 37.6% 升至 38.1%，2026 年 1 月进一步升至 45.2%，确立了绝对的市场领导地位 <span class="citation-ref"><a target="_blank" href="https://finance.sina.cn/stock/jdts/2026-03-10/detail-inhqneyz6360392.d.html?vt=4">51</a></span>。在策略层面，头部企业通过技术绑定巩固客户关系，如宁德时代与小鹏汽车在 2025 年末达成合作破冰，推出&quot;CATL Inside&quot;标识强化品牌，从单纯供应关系转向深度战略协同 <span class="citation-ref"><a target="_blank" href="https://nev.ofweek.com/2025-12/ART-77014-8110-30677966.html">55</a></span>。比亚迪作为另一头部企业，凭借垂直整合能力在产业链中占据重要份额，与宁德时代、LG 能源解决方案共同控制全球汽车电池市场相当大的份额，市场竞争激烈 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/moi1937268-automotive-battery-market-share-analysis-industry.html">49</a></span>。</p>
+<p>新兴挑战者与整车厂的博弈策略发生分化，供应链安全与成本控制成为突围关键。二线厂商如中创新航通过高增速抢占身位，试图在头部垄断格局中寻找增量空间 <span class="citation-ref"><a target="_blank" href="https://finance.sina.cn/stock/jdts/2026-03-10/detail-inhqneyz6360392.d.html?vt=4">51</a></span>。与此同时，整车厂为提升议价能力，开始实施多元化供应链策略，如以小鹏为代表的车企通过引入新供应商提升了议价能力，产业链话语权发生显著变化 <span class="citation-ref"><a target="_blank" href="https://nev.ofweek.com/2025-12/ART-77014-8110-30677966.html">55</a></span>。2026 年被视为电动车行业的关键一年，竞争焦点从价格战转向技术战，包括固态电池（能量密度高达 500Wh/kg）、5C 超充及智能化技术的布局，头部企业通过技术研发投入构建护城河，而新兴挑战者则通过多供应商体系和高端化战略寻求供应链安全与品牌突破 <span class="citation-ref"><a target="_blank" href="https://nev.ofweek.com/2025-12/ART-77014-8110-30677966.html">55</a></span>。通用汽车等制造商已签署价值 190 亿美元的合同以确保正极材料供应至 2035 年，以应对关键矿产供应波动，这进一步抬高了行业进入壁垒 <span class="citation-ref"><a target="_blank" href="https://cn.gii.tw/report/moi1937268-automotive-battery-market-share-analysis-industry.html">49</a></span>。</p>
+<h2>技术趋势与产品创新</h2>
+<p>当前全球电动车电池行业正处于从液态锂离子电池向下一代技术过渡的关键窗口期，技术迭代路径呈现“渐进式优化”与“颠覆式创新”并行的特征。传统液态电池技术已逼近物理化学极限，而固态电池与钠离子电池等新技术的商业化进程正在加速重塑产业格局。</p>
+<h3>主流化学体系迭代路径</h3>
+<p>在现有液态锂电体系中，磷酸铁锂（LFP）与三元锂（NCM）电池仍是市场主流，但能量密度提升面临瓶颈。2025 年 1 至 12 月，国内动力电池累计装车量中磷酸铁锂电池占比达 81.2%，显示出成本与安全优势下的主导地位 <span class="citation-ref"><a target="_blank" href="https://eu.36kr.com/zh/p/3645721778524036">84</a></span>。然而，传统液态锂离子电池技术已逼近物理化学极限，目前最先进的高镍三元电池（NCM811+ 硅碳负极）单体能量密度勉强达到 300Wh/kg，受限于石墨负极理论比容量及液态电解液稳定性，进一步提升空间极其有限 <span class="citation-ref"><a target="_blank" href="https://www.acgmc.com/?hangyedongtai/1456.html">56</a></span>。为突破这一限制，行业正通过材料改性及结构创新挖掘潜力，硅基负极材料（如特斯拉 4680 电池）使能量密度提升约 20%，磷酸锰铁锂（LMFP）相比磷酸铁锂能量密度提升约 20% 且成本可控 <span class="citation-ref"><a target="_blank" href="https://www.bitauto.com/article/1003106853650/">86</a></span>。</p>
+<p>结构创新成为提升系统成组效率的关键路径，4680 大圆柱电池及麒麟电池等设计显著优化了空间利用率。特斯拉已于 2025 年第四季度在得克萨斯州奥斯汀工厂成功将干电极工艺用于 4680 电池的正负极量产，实现能量密度提升 5%-10%，循环寿命测试显示 2000 次后容量保持率达 90% <span class="citation-ref"><a target="_blank" href="https://finance.sina.com.cn/tech/digi/2026-02-02/doc-inhkmfrz7409648.shtml">80</a></span><span class="citation-ref"><a target="_blank" href="https://www.guancha.cn/xinzhiguanchasuo/2026_02_03_805904.shtml">82</a></span>。动力电池制造端通过电池结构创新及减少电池模块促使成本下降，宁德时代和比亚迪分别有望实现每瓦时 0.4 元和 0.3 元的电池价格，高盛预测 2026 年电动汽车电池成本将降至每千瓦时 80 美元 <span class="citation-ref"><a target="_blank" href="https://epaper.tianjinwe.com/tjrb/h5/html5/2026-02/09/content_143080_3128470.htm">66</a></span>。尽管化学体系迭代面临瓶颈，但通过系统级优化，新一代固液电电池系统电包电量同比提升 67%，装车后续航里程可达到 1000 公里以上 <span class="citation-ref"><a target="_blank" href="https://epaper.tianjinwe.com/tjrb/h5/html5/2026-02/09/content_143080_3128470.htm">66</a></span><span class="citation-ref"><a target="_blank" href="https://chem.jgvogel.cn/c1581167.shtml">70</a></span>。</p>
+<h3>下一代技术商业化前景</h3>
+<p>固态电池与钠离子电池被视为打破现有格局的下一代核心技术，其商业化进程呈现分阶段推进的态势。半固态电池作为过渡技术已率先实现产业化落地和量产装车，2024 年被视为半固态装车元年，蔚来、上汽、广汽等车企已发布方案并部分实现装车 <span class="citation-ref"><a target="_blank" href="https://tanhexincai.com/zhuanjiaziyuan/1493.html">91</a></span>。2024 至 2026 年为半固态爆发期，卫蓝新能源为蔚来提供的 150kWh 半固态电池包于 2024 年第二季度进入换电网络，单体能量密度达 360Wh/kg，实测续航突破 1000 公里 <span class="citation-ref"><a target="_blank" href="https://www.stcn.com/article/detail/1317886.html">56</a></span>。全固态电池商业化进程预计分阶段推进，2027 至 2028 年硫化物全固态电池（如丰田、宁德时代）进入小批量示范运营，2030 年以后有望向中端市场渗透实现全面普及 <span class="citation-ref"><a target="_blank" href="https://www.stcn.com/article/detail/1317886.html">56</a></span>。</p>
+<p>钠离子电池在特定场景展现出显著的成本与低温性能优势，2026 年被视为钠离子电池真正商业化及规模化应用的起点 <span class="citation-ref"><a target="_blank" href="https://www.cls.cn/detail/2207391">61</a></span>。宁德时代计划 2026 年年中推出首款搭载钠离子电池的电动汽车，比亚迪于 2025 年 7 月投产全球首条钠离子电池量产线 <span class="citation-ref"><a target="_blank" href="https://www.cls.cn/detail/2207391">61</a></span>。2025 年钠离子电池单位成本约 59 美元/千瓦时，仍高于磷酸铁锂电池的 52 美元/千瓦时，但规模化生产后有望实现与铁锂平价 <span class="citation-ref"><a target="_blank" href="https://www.cls.cn/detail/2207391">61</a></span>。性能方面，宁德时代 2025 年钠新电池能量密度提升至 175Wh/kg，-20℃低温下保有 92% 以上可用电量，且正负极均可使用铝箔，为传统锂电池的一倍左右 <span class="citation-ref"><a target="_blank" href="https://www.baogaobox.com/insights/260303000025964.html">77</a></span><span class="citation-ref"><a target="_blank" href="https://www.large-battery.com/zh-TW/blog/na-ion-vs-li-ion-batteries-2025/">79</a></span>。预计到 2035 年磷酸铁锂电池和钠电池的比例为 4:6，2026 年电池及材料厂商如容百科技计划通过改造并购及新建大幅扩张钠电正极产能 <span class="citation-ref"><a target="_blank" href="https://www.itdcw.com/news/ycnews/0204153D32026.html">62</a></span><span class="citation-ref"><a target="_blank" href="http://xincai.com/article/nfystck2309128">83</a></span>。</p>
+<h3>制造工艺与降本逻辑</h3>
+<p>制造工艺的改进对成本降低及性能提升具有关键作用，干法电极及极限制造技术成为降本增效的核心驱动力。干法电极工艺相比湿法无需溶剂和烘干环节，可节省溶剂及设备费用，降低能耗 20%-50%，单位产能占地面积缩小一半以上 <span class="citation-ref"><a target="_blank" href="https://finance.sina.com.cn/tech/digi/2026-02-02/doc-inhkmfrz7409648.shtml">80</a></span><span class="citation-ref"><a target="_blank" href="https://www.guancha.cn/xinzhiguanchasuo/2026_02_03_805904.shtml">82</a></span>。对于固态电池制造，干法电极工艺优势明显，通过无需溶剂的粉末直接成膜，解决了硫化物电解质遇水问题并替代湿法涂布，显著提升电极压实密度和生产效率 <span class="citation-ref"><a target="_blank" href="https://www.baogaobox.com/insights/260224000025741.html">87</a></span>。然而，全固态电池制造面临干法电极工艺良品率不足 65% 及硫化物电解质成本达传统电池 4 倍等挑战，预计 2030 年全固态电池成本降至 100 美元/千瓦时 <span class="citation-ref"><a target="_blank" href="https://www.shiyanjia.com/knowledge-articleinfo-8644.html">64</a></span>。</p>
+<p>成本下降依赖于关键原材料价格波动及规模化生产效应，硫化锂作为硫化物全固态电池的主要成本来源，在硫化物固态电解质成本中占比超 80%，2025 年 9 月价格相比 24 年初下降超 60% <span class="citation-ref"><a target="_blank" href="https://pdf.dfcfw.com/pdf/H3_AP202512311811972060_1.pdf">60</a></span>。关键材料成本正在快速下降，硫化锂价格在 2025 年内从约 400 万元/吨大幅下降至 200 万元/吨左右，规模化生产与工艺优化是推动成本下探的主要路径 <span class="citation-ref"><a target="_blank" href="https://www.baogaobox.com/insights/260224000025741.html">90</a></span>。尽管当前全固态电池成本显著高于传统锂电池（硫化物路线成本约 158.8 美元/KWh），但企业正通过建设千吨级固态电解质产线及中试线推进量产筹备与工艺优化 <span class="citation-ref"><a target="_blank" href="https://k.sina.com.cn/article_1893892941_70e2834d02001yczq.html?from=society">73</a></span><span class="citation-ref"><a target="_blank" href="http://mp.cnfol.com/mp.php/57817/article/1770195409-142253675.html">87</a></span><span class="citation-ref"><a target="_blank" href="https://www.baogaobox.com/insights/260224000025741.html">90</a></span>。预计 2026 年电动汽车电池成本将降至每千瓦时 80 美元，新型固液电池通过原位生成锂负极技术降低生产成本，行业正从实验室概念期迈入工程化与中试量产的窗口期 <span class="citation-ref"><a target="_blank" href="https://epaper.tianjinwe.com/tjrb/h5/html5/2026-02/09/content_143080_3128470.htm">66</a></span><span class="citation-ref"><a target="_blank" href="https://www.baogaobox.com/insights/260224000025741.html">88</a></span>。</p>
+<h2>应用场景与商业模式</h2>
+<p>全球电动车电池行业的应用场景正从单一的乘用车动力领域向多元生态扩展，交通出行、储能系统及循环利用共同构成了行业增长的“三驾马车”。不同应用场景对电池性能、成本及寿命的差异化需求，正在重塑产品定义与商业模式，推动行业从单纯的产品销售向全生命周期价值管理转型。</p>
+<h3>交通出行领域应用</h3>
+<p>交通出行领域的应用需求呈现显著的结构性分化，乘用车、商用车及两轮车对电池性能的要求截然不同，驱动技术路线的针对性演进。乘用车领域，磷酸铁锂（LFP）在 2025 年依然是全球乘用车的首选，预计到 2026 年，磷酸锰铁锂（LMFP）将成为中低端车型的主流选择，而半固态电池将在高端性能车型中实现常态化搭载，以满足更高的续航与安全需求 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">94</a></span>。2025 年纯电动乘用车电池需求增长 29%，插电混动乘用车增长 17%，尽管 2026 年初销量环比有所波动，但单车带电量提升仍是核心趋势 <span class="citation-ref"><a target="_blank" href="https://www.9fzt.com/detail/sz_002594_1_149651421813540.html">109</a></span>。高端车型对快充与能量密度的追求推动了 800V 高压平台的普及，例如上汽集团 2026 年 2 月发布的国内首款车规级固态电池乘用车，支持 15 分钟快充至 80%，CLTC 综合续航达 950km，标志着固态电池正式迈入规模化量产阶段 <span class="citation-ref"><a target="_blank" href="https://caifuhao.eastmoney.com/news/20260224114412345994420">99</a></span>。</p>
+<p>商用车市场正迎来爆发式增长，成为电池需求的新引擎。2025 年纯电动货车电池需求增长 169%，2026 年全球商用车电池需求预计增长 67% 达 241GWh，国家层面已将“推动新能源重卡规模化应用”列为重点工作 <span class="citation-ref"><a target="_blank" href="https://emcreative.eastmoney.com/app_fortune/article/index.html?artCode=20260114085624075717600&postId=1652887964">109</a></span><span class="citation-ref"><a target="_blank" href="https://libattery.ofweek.com/2026-01/ART-36008-8500-30679890.html">111</a></span>。不同细分场景对电池需求差异明显：港口、园区等固定路线场景优先采用换电模式，中低速居多；长途干线物流因载重大、距离长，面临纯电续航焦虑，需依赖混动或氢燃料电池技术；轻卡城配场景因路线固定，预计 2025 年至 2029 年间 TCO（全生命周期成本）与燃油车打平 <span class="citation-ref"><a target="_blank" href="https://www.rolandberger.com/publications/publication_pdf/Electric_CV.pdf">113</a></span>。新能源商用车通过能源差价可节省约 60% 的能源成本，智能化技术可减少司机人力成本直至无人化，进一步巩固 TCO 优势 <span class="citation-ref"><a target="_blank" href="https://www.rolandberger.com/publications/publication_pdf/Electric_CV.pdf">113</a></span>。</p>
+<p>两轮车市场受新国标与回收政策驱动，正经历存量替换与合规升级。2025 年 12 月落地的《电动自行车安全技术规范》明确针扎安全底线，2026 年 4 月 1 日施行的回收管理办法明令禁止将废旧车用电池用于电动自行车，这催生了巨大的合规替换市场 <span class="citation-ref"><a target="_blank" href="https://libattery.ofweek.com/2026-01/ART-36008-8500-30679890.html">111</a></span>。具备体系化安全设计能力的企业将赢得合规替换市场先机，政策严格规范了电池回收与梯次利用模式，防止安全隐患扩散 <span class="citation-ref"><a target="_blank" href="https://libattery.ofweek.com/2026-01/ART-36008-8500-30679890.html">111</a></span>。此外，行业需求引擎正向多元领域扩展，低空经济（eVTOL）对高倍率、长寿命电池的需求将成为超额收益的来源，电动船舶和人形机器人也被视为打开长期成长空间的新场景 <span class="citation-ref"><a target="_blank" href="https://caifuhao.eastmoney.com/news/20260123102719873589850">94</a></span>。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">应用场景</th>
+  <th style="text-align:left">核心性能需求</th>
+  <th style="text-align:left">2025-2026 增长趋势</th>
+  <th style="text-align:left">主流技术路线</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>乘用车</strong></td>
+  <td style="text-align:left">续航、快充、安全性</td>
+  <td style="text-align:left">需求增速放缓但带电量提升</td>
+  <td style="text-align:left">LFP、LMFP、半固态</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>商用车</strong></td>
+  <td style="text-align:left">载重、循环寿命、TCO</td>
+  <td style="text-align:left">爆发式增长 (2025 货车 +169%)</td>
+  <td style="text-align:left">高能量密度、换电</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>储能系统</strong></td>
+  <td style="text-align:left">成本、循环寿命 (&gt;12,000 次)</td>
+  <td style="text-align:left">增速最快 (2026 预计 +50%)</td>
+  <td style="text-align:left">LFP、钠离子</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>两轮车</strong></td>
+  <td style="text-align:left">安全、合规、低温性能</td>
+  <td style="text-align:left">存量替换驱动，政策敏感</td>
+  <td style="text-align:left">铅酸、锂电、钠电</td>
+</tr>
+</tbody>
+</table>
+<p>商业模式创新成为交通领域盈利修复的关键，电池租赁（BaaS）与换电网络正在重构整车价值链。电池租赁与车电分离商业模式通过剥离占整车成本大头的电池资产，使车身价格降至约 15 万元，用户实际支出可低于 10 万元，利用后期节省的能源费用分期支付电池租金，解决了初始资金投入不足痛点 <span class="citation-ref"><a target="_blank" href="https://www.rolandberger.com/publications/publication_pdf/Electric_CV.pdf">113</a></span>。上汽集团推出“车电分离”电池租赁方案，5 年租赁周期内单车累计租赁收益超电池成本 30%，结合电池回收再利用带来二次盈利，形成全生命周期收益闭环 <span class="citation-ref"><a target="_blank" href="https://caifuhao.eastmoney.com/news/20260224114412345994420">99</a></span>。蔚来等造车新势力通过换电网络将成本包裹转为第二盈利曲线，2025 年第四季度首次实现单季主营业务经营利润 12.5 亿元，整车毛利率升至 18.1%，摆脱依赖融资的被动局面 <span class="citation-ref"><a target="_blank" href="https://news.sina.cn/bignews/insight/2026-03-11/detail-inhqrmmh5508086.d.html">101</a></span>。宁德时代与中石化合作推进大规模换电网络建设，目标扩展至上万座，采用&quot;CPO（充电运营商）+ 车队”或“电池即服务（BaaS）”分担初期投入风险 <span class="citation-ref"><a target="_blank" href="https://www.sohu.com/a/991685756_121124478">114</a></span>。</p>
+<h3>储能与循环利用生态</h3>
+<p>储能系统（ESS）已成为 2026 年电池需求增长最快的领域，预计 2026 年全球储能电池需求增速达 50% 左右（达 835GWh），绝对增量可能首次超过动力电池 <span class="citation-ref"><a target="_blank" href="https://libattery.ofweek.com/2026-01/ART-36008-8500-30679890.html">110</a></span>。2025 年全球储能系统装机量增长 23%，预计 2026 年将进一步提速，成为电池企业最重要的盈利支撑 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">94</a></span>。该场景对能量密度敏感度较低，但对循环寿命（要求超过 12,000 次）和长期度电成本极为看重，这将推动磷酸铁锂（LFP）和钠离子电池的普及 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">94</a></span>。钠离子电池在两轮电动车和极寒地区的储能系统中展现出强劲竞争力，其优势在于极寒环境下表现卓越，且支持过放电至 0V 而不损坏，是应对资源焦虑和特定场景需求的重要备选路径 <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">94</a></span>。光储充一体化趋势下，整车厂向下游延伸做能源服务，如广汽集团在泰国投资建设“光储充一体化”智慧工厂，构建从制造到能源服务的完整生态 <span class="citation-ref"><a target="_blank" href="https://epaper.nfnews.com/nfdaily/html/202603/13/content_10164978.html">102</a></span>。</p>
+<p>退役电池梯次利用在基站备电及工商业储能中的经济性日益凸显，成为资源闭环的关键环节。动力电池主要用途为电动汽车、电动自行车、电动船舶等，一般动力电池的使用寿命为 5 年左右，当容量衰减至低于 80% 时无法满足动力需求，需进行报废处置 <span class="citation-ref"><a target="_blank" href="https://m.chyxx.com/pdf/56/72/985672.pdf">120</a></span>。梯次利用商业模式通过精密仪器将退役电池按性能分为 A 到 D 档，A 类电池可作为户外电源核心，使可回收价值提升 30% <span class="citation-ref"><a target="_blank" href="https://k.sina.com.cn/article_7880068201_1d5b04c6901901whm4.html">107</a></span>。动力电池梯次利用企业成为工信部批准的重点，第四批次批准的企业中梯次利用企业占比高达 65.89% <span class="citation-ref"><a target="_blank" href="https://m.chyxx.com/pdf/56/72/985672.pdf">120</a></span>。梯次利用主要应用于储能系统、低速电动车及户外电源等低功率应用场景，以延长电池生命周期 <span class="citation-ref"><a target="_blank" href="https://caifuhao.eastmoney.com/news/20250925104347104951780">104</a></span><span class="citation-ref"><a target="_blank" href="https://k.sina.com.cn/article_7880068201_1d5b04c6901901whm4.html">107</a></span>。此外，动力电池回收与碳足迹管理深度融合，再生材料替代原生矿产可显著降低生产碳排放，具备完整回收能力的企业在国际供应链绿色准入中占据主动 <span class="citation-ref"><a target="_blank" href="https://caifuhao.eastmoney.com/news/20250925104347104951780">106</a></span>。</p>
+<p>回收网络布局对资源闭环的价值在于构建可持续的材料供应体系，2021 至 2030 年期间，动力电池报废量将以年均复合增长率 43% 快速增长，到 2030 年将达到每年 1,483 百万度（GWh） <span class="citation-ref"><a target="_blank" href="https://udn.com/news/story/6871/8582076">118</a></span>。中国预计将占全球电池回收产能的 70% 左右，电池回收产业在 2025 年迎来爆发式增长，Redwood Materials 和 Li-Cycle 等公司已实现金属回收率超过 95% <span class="citation-ref"><a target="_blank" href="https://udn.com/news/story/6871/8582076">94</a></span>。欧盟规定到 2031 年新电池必须含有一定比例再生材料，促使车企从“卖车模式”转向“材料全生命周期管理模式” <span class="citation-ref"><a target="_blank" href="https://xueqiu.com/8137218214/367372676">94</a></span>。锂电池回收的商业盈利逻辑在于利用回收过程提取和出售电极组合物中积累的原材料，以降低总体项目成本并减少对环境的影响 <span class="citation-ref"><a target="_blank" href="https://www.fortunebusinessinsights.com/zh/industry-reports/lithium-ion-battery-recycling-market-100244">122</a></span>。政府给予符合条件的回收企业给予资金补助，降低企业运营成本，鼓励加大研发投入和扩大生产规模 <span class="citation-ref"><a target="_blank" href="http://wap.seccw.com/Document/detail/id/39423.html">121</a></span>。领先解决方案集成商（如国电投）通过横向拓展上下游业务实现闭环：上游把控换电技术标准与关键零部件生产，下游通过电池经营性租赁、资产持有及电池拆解梯次利用完善资产管理与处置环节 <span class="citation-ref"><a target="_blank" href="https://www.rolandberger.com/publications/publication_pdf/Electric_CV.pdf">115</a></span>。</p>
+<h2>未来展望与投资策略</h2>
+<p>整合政策、技术及市场数据，2026 至 2030 年将是全球电动车电池行业从规模扩张向质量效益转型的关键阶段。基于供需平衡模型与地缘政治环境分析，行业将面临产能出清与结构性机会并存的复杂局面，投资机构需重点关注技术迭代带来的估值重构及区域化布局带来的风险对冲价值。</p>
+<h3>2026-2030 行业发展预测</h3>
+<p>全球电池供需格局在 2026 年迎来显著拐点，产能过剩风险加剧将倒逼行业进入深度整合期。根据测算，2025 年国内动力与储能电池产能规划超 3000GWh，而实际需求仅约 1500GWh，产能利用率普遍低于 60%，部分中小企业不足 30% <span class="citation-ref"><a target="_blank" href="https://www.news18a.com/news/storys_212605.html">133</a></span>。预计 2026 年电池行业产能过剩率将升至 30%，产能利用率下降将进一步压缩利润空间，行业竞争白热化将挤压利润 <span class="citation-ref"><a target="_blank" href="https://caifuhao.eastmoney.com/news/20260212150624575328410">129</a></span>。尽管短期（3 年内）动力电池供应商强势地位仍将得到支撑，但中长期看，麦肯锡分析指出已公告的全球电池标称产能到 2026 年将超过 1.2 TWh，远超实际需求 。然而，需求端仍保持增长惯性，EVTank 测算预计到 2030 年全球动力电池出货量有望达到 3,340GWh，复合年增长率达到 20.3% <span class="citation-ref"><a target="_blank" href="https://www.hangyan.co/charts/3739210954764715686">124</a></span>。</p>
+<p>区域制造布局将从“可选”变为“必选”，本地化生产成为规避贸易壁垒的核心策略。头部电池企业在东南亚和欧洲的产能布局将在 2026 至 2027 年迎来密集释放期，本地化制造从可选项变为必选项以规避贸易壁垒和碳足迹要求 <span class="citation-ref"><a target="_blank" href="https://www.news18a.com/news/storys_212605.html">133</a></span>。与此同时，AI 技术带来的新需求将成为储能市场的重要增量来源，至 2030 年，AIDC（人工智能数据中心）带来的新增储能需求可能超过 500GWh，成为储能市场重要的增量来源，有望为储能板块带来更大的远期空间与估值抬升 <span class="citation-ref"><a target="_blank" href="https://www.jiemian.com/article/13798348.html">128</a></span>。</p>
+<p>下一代电池技术的商业化进程将重塑产业竞争格局，固态电池进入关键验证窗口期。2026-2030 年为全固态电池产品技术突破和商业化验证关键窗口期，核心驱动在全固态电池材料技术突破、工艺和设备创新 <span class="citation-ref"><a target="_blank" href="https://finance.sina.com.cn/roll/2026-01-26/doc-inhircnv9324795.shtml">123</a></span>。2026-2028 年固液电池（半固态/准固态）规模化将带动产业链爆发，2028-2035 年之间全固态有望逐步商业化，重塑新能源产业格局 <span class="citation-ref"><a target="_blank" href="https://finance.sina.com.cn/roll/2026-01-26/doc-inhircnv9324795.shtml">123</a></span>。起点研究院 SPIR 预测，2025 年全球固态电池市场规模约为 0.05GWh，2027 年实现小批量出货（预计突破 1GWh），2030 年实现初步商业化（预计出货 10GWh），2035 年实现完全商业化（预计出货 325GWh） <span class="citation-ref"><a target="_blank" href="https://finance.sina.com.cn/roll/2026-01-26/doc-inhircnv9324795.shtml">123</a></span>。</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">时间节点</th>
+  <th style="text-align:left">发展阶段</th>
+  <th style="text-align:left">预计出货量</th>
+  <th style="text-align:left">关键特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>2025 年</strong></td>
+  <td style="text-align:left">试点验证期</td>
+  <td style="text-align:left">0.05 GWh</td>
+  <td style="text-align:left">市场规模起步，技术路线验证</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2027 年</strong></td>
+  <td style="text-align:left">小批量出货</td>
+  <td style="text-align:left">突破 1 GWh</td>
+  <td style="text-align:left">固液电池规模化带动产业链爆发</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2030 年</strong></td>
+  <td style="text-align:left">初步商业化</td>
+  <td style="text-align:left">10 GWh</td>
+  <td style="text-align:left">全固态电池技术突破关键窗口期</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>2035 年</strong></td>
+  <td style="text-align:left">完全商业化</td>
+  <td style="text-align:left">325 GWh</td>
+  <td style="text-align:left">重塑新能源产业格局，全面普及</td>
+</tr>
+</tbody>
+</table>
+<p>行业整合加速的时点已至，2026 至 2027 年电池行业进入洗牌期。头部企业凭借技术溢价和海外产能布局抗风险能力更强，可通过成本传导或本地化生产对冲压力 <span class="citation-ref"><a target="_blank" href="http://auto.ce.cn/auto/gundong/202504/t20250416_2089109.shtml">133</a></span>。依赖低价竞争的中小厂商将面临利润挤压，低端产能加速出清，行业集中度将进一步向具备规模效应和研发溢价的巨头聚拢 <span class="citation-ref"><a target="_blank" href="http://auto.ce.cn/auto/gundong/202504/t20250416_2089109.shtml">133</a></span>。2026 年中国乘用车批发增速预计从 2025 年的 11% 大幅放缓至 3%，电动车批发增速从 28% 放缓至 15%，但渗透率预计提升 6 个百分点，超过 50% <span class="citation-ref"><a target="_blank" href="https://www.news18a.com/news/storys_212605.html">133</a></span>。</p>
+<h3>投资机会与风险评估</h3>
+<p>基于产业链价值分布与技术壁垒，上游关键矿产资源、中游材料创新及下游回收环节的估值逻辑呈现显著差异。高增长潜力环节包括固态电池等高端产品研发、海外本地化产能布局、储能系统（占比将从当前约四分之一提升至三分之一甚至二分之一）、商用车电动化（将迎来翻倍增长） <span class="citation-ref"><a target="_blank" href="https://www.news18a.com/news/storys_212605.html">133</a></span>。具体投资布局焦点在于上游材料与专用设备，融资向头部集中，产业资本与 VC 协同推动技术产业化与产能扩张 <span class="citation-ref"><a target="_blank" href="https://finance.sina.com.cn/roll/2026-01-26/doc-inhircnv9324795.shtml">123</a></span>。高增长潜力环节具体包括上游电解质/正负极供应链、干法电极与等静压设备、固态电池专用封装技术 <span class="citation-ref"><a target="_blank" href="https://finance.sina.com.cn/roll/2026-01-26/doc-inhircnv9324795.shtml">123</a></span>。</p>
+<p>2026 年投资策略建议关注竞争激烈度与电池涨价风险，鉴于赢家格局尚未定型，区间交易和逆向投资或是优选策略，而非单纯关注销量放缓 <span class="citation-ref"><a target="_blank" href="https://www.cmbi.com.hk/upload/202512/20251209675061.pdf">132</a></span>。2026 年电池产业反内卷政策正式实施，四部门联合召开行业座谈会，要求优化产能规划，规避过剩风险，规范市场竞争 <span class="citation-ref"><a target="_blank" href="https://www.ditan.com/industry/elec/10531.html">133</a></span>。然而，政策调整也带来了收益不确定性，2026 年潜在风险主要来自政策与机制变化带来的收益不确定性、安全质量的系统性风险，以及海外市场面临北美关税政策重构、欧洲准入标准升级等不确定性 <span class="citation-ref"><a target="_blank" href="https://www.eet-china.com/mp/a480426.html">136</a></span>。</p>
+<p>潜在风险点主要集中在贸易摩擦、技术路线及原材料价格波动。国际贸易摩擦加剧、欧美贸易壁垒上升是主要外部风险，依赖低价策略的中小企业生存压力显著 <span class="citation-ref"><a target="_blank" href="https://www.news18a.com/news/storys_212605.html">133</a></span>。政策层面，财政部、税务总局宣布取消电池产品增值税出口退税，分两步实施：2026 年 4 月 1 日至 12 月 31 日退税率从 9% 下调至 6%，2027 年 1 月 1 日起完全取消 <span class="citation-ref"><a target="_blank" href="https://www.ditan.com/industry/elec/10531.html">133</a></span>。技术路线押注失败风险依然存在，2026 年 7 月 1 日起实施史上最严电动车电池安全令，要求动力电池发生热失控后不起火、不爆炸为强制性要求，截至 2025 年 2 月，受访的 36 家整车和电池企业中，78% 已具备该技术储备，14% 预计 2026-2027 年具备 <span class="citation-ref"><a target="_blank" href="http://auto.ce.cn/auto/gundong/202504/t20250416_2089109.shtml">134</a></span>。此外，原材料环节短期供需紧张及电池出口价低于成本导致出口越多亏损越多，也是投资组合需警惕的潜在冲击 <span class="citation-ref"><a target="_blank" href="https://www.news18a.com/news/storys_212605.html">133</a></span>。</p>
+
+  </div>
+</div>
+
+<div class="citation-popup" id="citationPopup">
+	<div class="popup-header">
+		<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+		</svg>
+	</div>
+	<div class="popup-excerpt" id="popupExcerpt"></div>
+</div>
+
+<script>
+    (function () {
+        'use strict';
+
+        const modernBtn = document.getElementById('modern-btn');
+        const brutalistBtn = document.getElementById('brutalist-btn');
+        const body = document.body;
+
+        const paletteLight = [
+            '#3d2f6e', '#6b5acc', '#8A75D6', '#a49de3',
+            '#A2BBDC', '#BCCDE4', '#DCE4F0', '#FEF8E5',
+            '#FDF2D0', '#FBE6A4'
+        ];
+        const paletteDark = [
+            '#7c6ef5', '#fffeec', '#fdccff'
+        ];
+
+        function getThemeUI() {
+            const isDark = document.body.classList.contains('brutalist-theme');
+            if (isDark) {
+                return {
+                    isDark: true,
+                    text: '#E8EAED',
+                    axis: '#9AA0A6',
+                    grid: '#2F3B45',
+                    palette: paletteDark,
+                    tooltip: {
+                        backgroundColor: 'rgba(50, 50, 50, 0.7)',
+                        borderColor: '#E8EAED',
+                        textStyle: { color: '#E8EAED' }
+                    }
+                };
+            }
+            return {
+                isDark: false,
+                text: '#20396D',
+                axis: '#9CA3AF',
+                grid: '#E5E7EB',
+                palette: paletteLight,
+                tooltip: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+                    borderColor: '#333',
+                    textStyle: { color: '#333' }
+                }
+            };
+        }
+
+        function buildAxisStyle(ui) {
+            return {
+                axisLabel: { color: ui.text },
+                axisLine: { show: false, lineStyle: { color: ui.axis } },
+                splitLine: { show: false, lineStyle: { color: ui.grid } }
+            };
+        }
+
+        function updateChartTheme(isBrutalist) {
+            const chartContainers = document.querySelectorAll('.chart-container');
+            chartContainers.forEach(container => {
+                const myChart = echarts.getInstanceByDom(container);
+                if (myChart) {
+                    const ui = getThemeUI();
+                    const axisStyle = buildAxisStyle(ui);
+
+                    myChart.setOption({
+                        backgroundColor: 'transparent',
+                        color: ui.palette,
+                        textStyle: { color: ui.text },
+                        legend: { textStyle: { color: ui.text } },
+                        title: { textStyle: { color: ui.text } },
+                        xAxis: axisStyle,
+                        yAxis: axisStyle,
+                        tooltip: {
+                            ...ui.tooltip,
+                            borderWidth: 1
+                        },
+						polar: {
+							axisLine: { show: false,lineStyle: { color: ui.axis } }
+						},
+						angleAxis: {
+							axisLine: { show: false,lineStyle: { color: ui.axis } }
+						},
+						radiusAxis: {
+							axisLine: { show: false,lineStyle: { color: ui.axis } }
+						},
+						series: {
+							label: {color: ui.text},
+							labelLine: {lineStyle: {color: ui.text}},
+							emphasis: {label: {color: ui.text}}
+						}
+                    }, false, false);
+                }
+            });
+        };
+
+        modernBtn.addEventListener('click', () => {
+            body.classList.remove('brutalist-theme');
+            modernBtn.classList.add('active');
+            brutalistBtn.classList.remove('active');
+            updateChartTheme(false);
+        });
+
+        brutalistBtn.addEventListener('click', () => {
+            body.classList.add('brutalist-theme');
+            brutalistBtn.classList.add('active');
+            modernBtn.classList.remove('active');
+            updateChartTheme(true);
+        });
+
+        function debounce(func, wait) {
+            let timeout;
+            return function (...args) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, args), wait);
+            };
+        }
+
+        function loadScript(src, { timeout = 15000 } = {}) {
+            return new Promise((resolve, reject) => {
+                const s = document.createElement('script');
+                let done = false;
+                const timer = setTimeout(() => {
+                    if (done) return;
+                    done = true;
+                    s.remove();
+                    reject(new Error(`Load timeout: ${src}`));
+                }, timeout);
+                s.src = src;
+                s.async = true;
+                s.onload = () => {
+                    if (done) return;
+                    done = true;
+                    clearTimeout(timer);
+                    resolve();
+                };
+                s.onerror = () => {
+                    if (done) return;
+                    done = true;
+                    clearTimeout(timer);
+                    reject(new Error(`Failed to load: ${src}`));
+                };
+                document.head.appendChild(s);
+            });
+        }
+
+        async function ensureEchartsLoaded() {
+            if (typeof window.echarts !== 'undefined') return;
+            const cdns = [    
+				'https://https://gcore.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js',
+                'https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js',
+                'https://unpkg.com/echarts@5.4.3/dist/echarts.min.js'
+            ];
+            let lastErr;
+            for (const url of cdns) {
+                try {
+                    await loadScript(url);
+                    if (typeof window.echarts !== 'undefined') return;
+                } catch (e) {
+                    lastErr = e;
+                }
+            }
+            throw lastErr || new Error('ECharts CDN load failed');
+        }
+
+        const DomProcessor = {
+            init(scopeSelector) {
+                const contentScope = document.querySelector(scopeSelector) || document.body;
+                if (!contentScope) return;
+
+                this.removeChapterNumerals(contentScope);
+                this.transformMarkdownBold(contentScope);
+                this.addInterScriptSpacing(contentScope);
+            },
+
+            removeChapterNumerals(scope) {
+                const chapterNumeralRegex = /^[一二三四五六七八九十百千]+[、\.．]\s*/;
+                scope.querySelectorAll('h2').forEach(h => {
+                    h.textContent = h.textContent.replace(chapterNumeralRegex, '').trim();
+                });
+            },
+
+            transformMarkdownBold(scope) {
+                const textElementsSelector = 'p, li, td, th, blockquote';
+                const elements = scope.querySelectorAll(textElementsSelector);
+                const boldRegex = /\*\*([^*]+?)\*\*/g;
+
+                elements.forEach(el => {
+                    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+                    const nodesToProcess = [];
+                    let node;
+                    while ((node = walker.nextNode())) {
+                        if (
+                            node.parentNode.tagName !== 'CODE' &&
+                            node.parentNode.tagName !== 'A' &&
+                            boldRegex.test(node.nodeValue)
+                        ) {
+                            nodesToProcess.push(node);
+                        }
+                    }
+                    nodesToProcess.forEach(textNode => {
+                        const fragment = document.createDocumentFragment();
+                        let lastIndex = 0;
+                        textNode.nodeValue.replace(boldRegex, (match, p1, offset) => {
+                            fragment.appendChild(
+                                document.createTextNode(textNode.nodeValue.slice(lastIndex, offset))
+                            );
+                            const strong = document.createElement('strong');
+                            strong.textContent = p1;
+                            fragment.appendChild(strong);
+                            lastIndex = offset + match.length;
+                        });
+                        fragment.appendChild(
+                            document.createTextNode(textNode.nodeValue.slice(lastIndex))
+                        );
+                        textNode.parentNode.replaceChild(fragment, textNode);
+                    });
+                });
+            },
+
+            addInterScriptSpacing(scope) {
+                const THIN_SPACE = ' ';
+                const cjkLatinRegex = /([一-龥＀-￯])([a-zA-Z0-9])/g;
+                const latinCjkRegex = /([a-zA-Z0-9])([一-龥＀-￯])/g;
+
+                const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT);
+                let node;
+                while ((node = walker.nextNode())) {
+                    if (['STYLE', 'SCRIPT', 'PRE', 'CODE', 'A', 'STRONG'].includes(node.parentNode.tagName)) {
+                        continue;
+                    }
+                    node.nodeValue = node.nodeValue
+                        .replace(cjkLatinRegex, `$1${THIN_SPACE}$2`)
+                        .replace(latinCjkRegex, `$1${THIN_SPACE}$2`);
+
+                    const nextSibling = node.nextSibling;
+                    if (nextSibling && nextSibling.nodeType === Node.ELEMENT_NODE && nextSibling.tagName === 'STRONG') {
+                        continue;
+                    }
+                    const currentText = node.nodeValue;
+                    if (!currentText) continue;
+                    const nextText = nextSibling ? nextSibling.textContent : '';
+                    if (!nextText) continue;
+                    const lastChar = currentText.slice(-1);
+                    const firstChar = nextText.slice(0, 1);
+                    const isCjk = ch => /[一-龥＀-￯]/.test(ch);
+                    const isLatin = ch => /[a-zA-Z0-9]/.test(ch);
+                    if (!currentText.endsWith(THIN_SPACE) && !currentText.endsWith(' ')) {
+                        if ((isCjk(lastChar) && isLatin(firstChar)) || (isLatin(lastChar) && isCjk(firstChar))) {
+                            node.nodeValue += THIN_SPACE;
+                        }
+                    }
+                }
+            }
+        };
+
+        const ChartManager = {
+            instances: [],
+
+            async init() {
+                try {
+                    await ensureEchartsLoaded();
+                } catch (e) {
+                    console.error('can not load ECharts：', e);
+                    return;
+                }
+                this.hookEchartsInit();
+                this.setupResizeListener();
+                updateChartTheme();
+            },
+
+            hookEchartsInit() {
+                const originalInit = echarts.init;
+                const self = this;
+
+                let existingInstances = [];
+                const chartContainers = document.querySelectorAll('.chart-container');
+                chartContainers.forEach(dom => {
+                    const instance = echarts.getInstanceByDom(dom);
+
+                    if (instance) {
+                        existingInstances.push(instance);
+                    }
+                });
+                self.instances.push(...existingInstances);
+            },
+
+            setupResizeListener() {
+                const debouncedResize = debounce(() => {
+                    this.instances.forEach(inst => {
+                        if (inst && !inst.isDisposed()) inst.resize();
+                    });
+                }, 200);
+                window.addEventListener('resize', debouncedResize);
+            },
+        };
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            DomProcessor.init('.content-card');
+            await ChartManager.init();
+        });
+    })();
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const modernBtn = document.getElementById('modern-btn');
+        const brutalistBtn = document.getElementById('brutalist-btn');
+        const body = document.body;
+
+        const setTheme = (theme) => {
+            if (theme === 'brutalist') {
+                body.classList.add('brutalist-theme');
+                modernBtn.classList.remove('active');
+                brutalistBtn.classList.add('active');
+                localStorage.setItem('reportTheme', 'brutalist');
+            } else {
+                body.classList.remove('brutalist-theme');
+                modernBtn.classList.add('active');
+                brutalistBtn.classList.remove('active');
+                localStorage.setItem('reportTheme', 'modern');
+            }
+        };
+
+        modernBtn.addEventListener('click', () => setTheme('modern'));
+        brutalistBtn.addEventListener('click', () => setTheme('brutalist'));
+
+        setTheme('modern');
+    });
+</script>
+</body>
+</html>
